@@ -4,15 +4,18 @@ from robot import Robot
 class Battlefield:
     def __init__(self):
         self.robot = Robot("Jerry")
-        self.dinosaur = Dinosaur("Fredrick",10)
+        self.dinosaur = Dinosaur("Fredrick",40)
 
     def run_game(self):
+
         self.display_welcome()
         self.battle_phase()
         self.display_winner()
 
     def display_welcome(self):
         print(f"\n\nHello today you will be witnessing a battle between {self.robot.name} and {self.dinosaur.name}")
+
+
 
     def battle_phase(self):
         while self.robot.health > 0 and self.dinosaur.health > 0:
