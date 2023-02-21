@@ -20,7 +20,7 @@ class Weapon:
         for item in selected_list:
             print(f"{item}")
 
-# 
+# Calculates the weapon damage based off provided name
     def weapon_damage(self, name):
         damage = 0
 
